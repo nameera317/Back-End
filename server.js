@@ -4,7 +4,7 @@ const axios = require("axios");
 const router = express.Router(); // Create an Express Router
 const mongoose = require("mongoose"); // For our Database connection
 const cors = require("cors");
-import dotenv from 'dotenv';
+const dotenv = require('dotenv');
 dotenv.config();
 const PORT = process.env.PORT || 3000; // Setting up the PORT
 
