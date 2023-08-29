@@ -1,10 +1,12 @@
 const express = require("express"); //Create an Express application
 const app = express();
-const PORT = 3000; // Setting up the PORT
 const axios = require("axios");
 const router = express.Router(); // Create an Express Router
 const mongoose = require("mongoose"); // For our Database connection
 const cors = require("cors");
+import dotenv from 'dotenv';
+dotenv.config();
+const PORT = process.env.PORT || 3000; // Setting up the PORT
 
 app.use(
   cors({
