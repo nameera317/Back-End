@@ -144,15 +144,15 @@ router.get("/pie-chart/:month", async (req, res) => {
 router.get("/combined-data/:month", async (req, res) => {
   const monthName = req.params.month.toLowerCase();
   const response1 = await axios.get(
-    `https://mern-backend-1osu.onrender.com/api/statistics/${monthName}`
+    `https://back-end-hbuc.onrender.com/api/statistics/${monthName}`
   );
   const res1 = response1.data;
   const response2 = await axios.get(
-    `https://mern-backend-1osu.onrender.com/api/pie-chart/${monthName}`
+    `https://back-end-hbuc.onrender.com/api/pie-chart/${monthName}`
   );
   const res2 = response2.data;
   const response3 = await axios.get(
-    `https://mern-backend-1osu.onrender.com/api/bar-chart/${monthName}`
+    `https://back-end-hbuc.onrender.com/api/bar-chart/${monthName}`
   );
   const res3 = response3.data;
 
